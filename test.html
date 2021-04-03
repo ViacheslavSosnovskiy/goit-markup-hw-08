@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stlyle.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="company-logo">Логотип</a>
+            
+            <button 
+            type="button" 
+            class="menu-button is-open"
+            aria-expanded="false"
+            data-menu-button
+            >
+                <svg
+                    width="40"
+                    height="40"
+                    aria-label="Переключатель мобильного меню"
+                >
+                    <use class="icon-cross" href="./css/sprite.svg#cross"></use>
+                    <use class="icon-menu" href="./css/sprite.svg#home"></use>
+                </svg>
+            </button>
+            <div class="menu-container"></div>
+        </nav>
+    </header>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
