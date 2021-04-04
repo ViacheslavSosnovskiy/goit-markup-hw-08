@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/stlyle.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="header">
@@ -14,8 +14,9 @@
             
             <button 
             type="button" 
-            class="menu-button is-open"
+            class="menu-button"
             aria-expanded="false"
+            aria-controls="menu-container"
             data-menu-button
             >
                 <svg
@@ -27,7 +28,7 @@
                     <use class="icon-menu" href="./css/sprite.svg#home"></use>
                 </svg>
             </button>
-            <div class="menu-container"></div>
+            <div class="menu-container" id="menu-container"></div>
         </nav>
     </header>
     <script src="./js/menu.js"></script>
