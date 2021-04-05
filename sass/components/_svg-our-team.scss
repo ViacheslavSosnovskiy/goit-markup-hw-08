@@ -1,0 +1,34 @@
+.icon-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.icon-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color var(--animation);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.svg-icons {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+
+    .icon-list__link:hover &,
+    .icon-list__link:focus & {
+        fill: var(--primary-white-color);
+    }
+}
+
+

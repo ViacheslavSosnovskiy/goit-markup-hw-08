@@ -1,0 +1,22 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/container';
+
+@import './components/logo';
+@import './components/nav-links';
+@import './components/svg-our-team';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/about';
+@import './layout/our-team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/footer-join';
+@import './layout/footer-subscribe';

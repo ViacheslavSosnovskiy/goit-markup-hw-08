@@ -1,0 +1,41 @@
+.footer-social {
+    margin-right: 93px;
+}
+
+.social-list {
+    display: flex;
+    margin-top: 20px;  /* от присоединяйтесь*/
+}
+
+.social-list__item{
+   .social-list &:not(:last-child){
+      margin-right: 10px;
+   }
+}
+
+.join {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   color: var(--primary-white-color);
+}
+
+.white {
+   fill:var(--primary-white-color);
+}
+
+.social-list__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+   transition: background-color var(--animation);
+
+   &:hover,
+   &:focus {
+      background-color: var(--accent-color);
+   }
+}

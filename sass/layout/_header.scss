@@ -1,0 +1,13 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+
+    & .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}

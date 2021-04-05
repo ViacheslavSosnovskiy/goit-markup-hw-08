@@ -1,0 +1,30 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 40px; 
+}
+
+.modal-button {
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button-svg:hover,
+.button-svg:focus {
+    fill: var(--accent-color);
+    transition: border var(--animation);
+}
