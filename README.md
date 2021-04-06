@@ -18,6 +18,6 @@ https://viacheslavsosnovskiy.github.io/goit-markup-hw-08/test.html
                     img/img-2@2x.jpg 2x
                 " 
                 src="img/img-2@1x.jpg" 
-                alt="зайка"
+                alt=""
                 width="320"/>
         </div>
