@@ -3,13 +3,19 @@
     padding-bottom: 94px;
 }
 
-.section-about h2 {
-    margin-bottom: 50px;
-    text-align: center;
+.section-about {
+    & h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+    }
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .about-list {

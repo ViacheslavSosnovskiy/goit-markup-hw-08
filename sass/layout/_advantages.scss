@@ -18,6 +18,12 @@
         line-height: 1.71;
         color: var(--title-text-color);
     }
+
+    // @media screen and (min-width: 768px), screen and (max-width: 1199px) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     margin: -15px;
+    // }
 }
 
 
@@ -25,6 +31,17 @@
     .advantages-list &:not(:last-child){
         margin-right: 30px;
     }
+
+    // @media screen and (min-width: 768px) {
+    //     flex-basis: calc((100% - 4 * 15px) / 2);
+    //     margin: 15px;
+    // }
+
+    // &:not(:last-child){
+    //     @media screen and (max-width: 767px){
+    //         margin-bottom: 30px;
+    //     }
+    // }
 }
 
 .advantages-list__box {
