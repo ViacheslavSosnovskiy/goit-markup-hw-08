@@ -83,7 +83,8 @@ button {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 450px;
+    /*исправить*/
     margin: 0 auto;
   }
 }
