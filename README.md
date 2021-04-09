@@ -8,6 +8,13 @@
     calc:((100% - 2 * 10px)/2);
     margin: 5px;
 }
+
++++ очень важно +++
+ ставить размер 
+ width: 100vw;
+ height: 100vw; - VW - адаптирует под любой экран 
+ 
+ 
 https://viacheslavsosnovskiy.github.io/goit-markup-hw-08/test.html
 
 у нас адаптивный контейнер и мы будем делать так:
