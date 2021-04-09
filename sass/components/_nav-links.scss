@@ -1,84 +1,91 @@
-
- .header .twin {
-    display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-} 
-
-.navigation__list .navigation__link {
-    position: relative;  /*для подчеркивания*/
-    color:var(--primary-text-color);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
-
-.contacts .contacts__link {
-    color:var(--title-text-color);
-
-    &:hover,
-    &:focus {
-    color: var(--accent-color);
-    }
-}
-
-/*  флексы шапки  */
-.navigation__list {
-    display: flex;
-    align-items: center;
-    margin-left: 93px;
-}
-
 .contacts {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
+
+
+//  .header .twin {
+//     display: inline-block;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+// } 
+
+// .navigation__list .navigation__link {
+//     position: relative;  /*для подчеркивания*/
+//     color:var(--primary-text-color);
+
+//     &:hover,
+//     &:focus {
+//         color: var(--accent-color);
+//     }
+// }
+
+// .contacts .contacts__link {
+//     color:var(--title-text-color);
+
+//     &:hover,
+//     &:focus {
+//     color: var(--accent-color);
+//     }
+// }
+
+// /*  флексы шапки  */
+// .navigation__list {
+//     display: flex;
+//     align-items: center;
+//     margin-left: 93px;
+// }
+
+// .contacts {
+//     display: flex;
+//     align-items: center;
+//     margin-left: auto;
+// }
         
-.contacts .contacts__item:not(:last-child){
-    margin-right: 50px;
-}
+// .contacts .contacts__item:not(:last-child){
+//     margin-right: 50px;
+// }
 
-.navigation__list .navigation__item:not(:last-child){
-    margin-right: 50px;
-}
+// .navigation__list .navigation__item:not(:last-child){
+//     margin-right: 50px;
+// }
 
-/*  svg / contact */
+// /*  svg / contact */
 
-.contacts__icons {
-    display:inline-flex;
-    margin-right: 10px;
-    fill: #757575;
+// .contacts__icons {
+//     display:inline-flex;
+//     margin-right: 10px;
+//     fill: #757575;
     
-    .contacts .contacts__link:hover &,
-    .contacts .contacts__link:focus & {
-        fill:var(--accent-color);
-    }
-}
+//     .contacts .contacts__link:hover &,
+//     .contacts .contacts__link:focus & {
+//         fill:var(--accent-color);
+//     }
+// }
 
-/* ==============  эффект текущей страницы ============ */
-.current {
-    color: var(--accent-color);
+// /* ==============  эффект текущей страницы ============ */
+// .current {
+//     color: var(--accent-color);
 
-    &::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
+//     &::after{
+//         content: '';
+//         position: absolute;
+//         left: 0;
+//         bottom: 0;
     
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color:var(--accent-color);
+//         display: block;
+//         width: 100%;
+//         height: 4px;
+//         border-radius: 2px;
+//         background-color:var(--accent-color);
     
-        transition: opacity var(--animation);
-    }
-}
+//         transition: opacity var(--animation);
+//     }
+// }
