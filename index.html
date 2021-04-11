@@ -167,7 +167,27 @@
                     <li class="team-list__item">
                         <div class="card">
                             <div class="card-thumb">
-                        <img src="./images/команда/img.jpg" alt="" width="450" height="460">
+                                <picture>
+                                    <source 
+                                        srcset="./images/team/igor-desktop.webp 1x, ./images/team/igor-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp">
+                                    <source 
+                                        srcset="./images/team/igor-desktop.jpg 1x, ./images/team/igor-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source 
+                                        srcset="./images/team/igor-tablet.webp 1x, ./images/team/igor-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/team/igor-tablet.jpg 1x, ./images/team/igor-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)">
+                                    <source 
+                                        srcset="./images/team/igor-mobile.webp 1x, ./images/team/igor-mobile@2x.webp 2x"
+                                        media="(min-width: 480px)" type="image/webp">
+                                    <source
+                                        srcset="./images/team/igor-mobile.jpg 1x, ./images/team/igor-mobile@2x.jpg 2x"
+                                        media="(min-width: 480px)">
+                                    <img src="./images/team/igor-mobile.jpg" alt="">
+                                </picture>
                             </div>
                             <div class="our-team">
                                 <h3 class="heading">Игорь Демьяненко</h3>
