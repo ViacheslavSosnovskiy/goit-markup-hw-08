@@ -83,7 +83,7 @@ button {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     /*исправить*/
     margin: 0 auto;
   }
@@ -347,11 +347,6 @@ button {
   background-color: var(--hover-background-color);
 }
 
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
 @media screen and (max-width: 767px) {
   .navigation__list {
     display: none;
@@ -401,6 +396,10 @@ button {
 }
 
 .section-hero {
+  max-width: 480px;
+  min-height: 400px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-mobile.jpg");
 }
 
@@ -412,7 +411,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    min-height: 400px;
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tablet.jpg");
   }
 }
@@ -426,6 +425,7 @@ button {
 @media screen and (min-width: 1200px) {
   .section-hero {
     min-height: 600px;
+    max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-desktop.jpg");
   }
 }
@@ -525,6 +525,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .advantages-list .advantages-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .advantages-list__box {
   display: flex;
   justify-content: center;
@@ -541,13 +547,31 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
     width: 100vw;
     height: 100vh;
     max-width: 450px;
-    max-height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    margin-bottom: 30px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages-list__box {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 354px;
+    height: 120px;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__box {
+    display: flex;
+    max-width: 270px;
+    height: 120px;
+    width: 100vw;
   }
 }
 

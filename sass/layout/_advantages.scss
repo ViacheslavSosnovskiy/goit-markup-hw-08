@@ -55,6 +55,12 @@
             margin-bottom: 30px;
         }
     }
+
+    @media screen and (min-width: 1200px) {
+        .advantages-list &:not(:last-child){
+                margin-right: 30px;
+            }
+    }
 }
 
 .advantages-list__box {
@@ -72,13 +78,29 @@
         justify-content: center;
         align-items: center;
 
+        margin-right: auto;
+        margin-left: auto;
+
         width: 100vw;
         height: 100vh;
         max-width: 450px;
-        max-height: 120px;
-        background: #F5F4FA;
-        border-radius: 4px;
-        margin-bottom: 30px;
+        height: 120px;
 
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: auto;
+        margin-left: auto;
+
+        max-width: 354px; 
+        height: 120px;
+        width: 100vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        max-width: 270px; 
+        height: 120px;
+        width: 100vw;
     }
 }

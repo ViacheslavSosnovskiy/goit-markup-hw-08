@@ -83,7 +83,7 @@ button {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
     /*исправить*/
     margin: 0 auto;
   }
@@ -250,11 +250,6 @@ button {
 .card-list__link:hover .overlay,
 .card-list__link:focus .overlay {
   transform: translateY(0%);
-}
-
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 @media screen and (max-width: 767px) {

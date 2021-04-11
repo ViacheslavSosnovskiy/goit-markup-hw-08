@@ -1,4 +1,9 @@
 .section-hero {
+    max-width: 480px;
+    min-height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+
     // max-width: 1600px;
     // background-color:#2F303A;
     // padding-top: 200px;
@@ -14,7 +19,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        min-height: 400px;
+        max-width: 768px;
         background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-tablet.jpg");
 
         @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -24,6 +29,7 @@
 
     @media screen and (min-width: 1200px) {
         min-height: 600px;
+        max-width: 1600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-bg-desktop.jpg");
     
         @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
