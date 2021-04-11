@@ -117,12 +117,6 @@ button {
   color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 767px) {
-  .contacts {
-    display: none;
-  }
-}
-
 .icon-list {
   display: flex;
   justify-content: space-between;
@@ -252,52 +246,75 @@ button {
   transform: translateY(0%);
 }
 
+@media screen and (min-width: 768px) {
+  .navigation .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation .logo {
+    margin-right: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navigation__list {
     display: none;
   }
 }
 
-.burger-btn,
-.modal-menu__close-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__list {
+    display: flex;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .burger-btn {
+@media screen and (max-width: 767px) {
+  .contacts {
     display: none;
   }
 }
 
-.modal-menu__close-button {
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* ==============  эффект текущей страницы ============ */
+.current {
+  color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
   position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 100vw;
-  max-width: 480px;
-  height: 100vh;
-  padding: 48px 40px;
-  background-color: bisque;
-  transform: translateY(-100%) translateX(-50%);
-  transition: transform var(--animation);
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-
-.is-open {
-  transform: translateY(0) translateX(-50%);
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  transition: opacity var(--animation);
 }
 
 .footer {
