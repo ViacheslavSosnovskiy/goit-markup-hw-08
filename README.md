@@ -1,4 +1,4 @@
-# test work
+Homework № 8
 ---Формула для расчета ширины ---
 @media screen and (min-width: 760px) {
     width: calc (
@@ -15,9 +15,7 @@
  height: 100vw; - VW - адаптирует под любой экран 
  
  
-https://viacheslavsosnovskiy.github.io/goit-markup-hw-08/test.html
-
-у нас адаптивный контейнер и мы будем делать так:
+ у нас адаптивный контейнер и мы будем делать так:
         <div class="thumb">
             <img 
                 srcset="
@@ -28,3 +26,7 @@ https://viacheslavsosnovskiy.github.io/goit-markup-hw-08/test.html
                 alt=""
                 width="320"/>
         </div>
+ 
+https://viacheslavsosnovskiy.github.io/goit-markup-hw-08/test.html
+
+
