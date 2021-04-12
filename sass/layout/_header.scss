@@ -1,32 +1,13 @@
 .header {
 
-    // // .header{
-// //     border-bottom: 1px solid #ECECEC;
-
-// //     & .container {
-// //         display: flex;
-// //         align-items: center;
-// //     }
-// // }
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
     @media screen and (min-width: 768px) {
-        padding-top: 21px;
-        padding-bottom: 21px;
         border-bottom: 1px solid #ECECEC;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 24px;
-        padding-bottom: 24px;
-        // border-bottom: 1px solid #ECECEC;
-}
+        }
 
 .navigation {
 
-    .logo {
+    .logo {   /*отступ от nav*/
+
         @media screen and (min-width: 768px) {
             margin-right: 88px;
         }
@@ -40,14 +21,16 @@
         display: flex;
         align-items: center;
     }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 
     
 .navigation__list { 
-    // display: flex;
-    // align-items: center;
-    // margin-left: 93px;
 
     @media screen and (max-width:767px) {
         display: none;
@@ -59,16 +42,22 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        align-items: center;  
+        align-items: center;
+    }
+}
+
+.navigation__item {
+
+    @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
     }
 }
 
 
 
 .contacts {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
 
     @media screen and (max-width:767px) {
         display: none;
@@ -85,29 +74,12 @@
 
     @media screen and (min-width: 1200px) {
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: 50px;
         }
     }
 }
-.navigation__item {
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        &:not(:last-child){
-            margin-right: 50px;
-        }
-    }
-
-
-    @media screen and (min-width: 1200px) {
-        &:not(:last-child){
-            margin-right: 50px;
-            }   
-    }
-}
-
-
-/* ==============  эффект текущей страницы ============ */
 .current {
     color: var(--accent-color);
 

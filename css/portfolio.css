@@ -81,8 +81,29 @@ button {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .header .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header .container {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
 @media screen and (min-width: 480px) {
-  .container {
+  .header .container {
     width: 480px;
     /*исправить*/
     margin: 0 auto;
@@ -90,13 +111,13 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .header .container {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .header .container {
     width: 1200px;
   }
 }
@@ -147,8 +168,7 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts__link:not(:last-child) {
-    /* lдоделать */
+  .contacts__link:first-of-type {
     margin-bottom: 10px;
   }
 }
@@ -160,8 +180,14 @@ button {
 /*  svg / contact */
 .contacts__icons {
   display: inline-flex;
-  margin-right: 10px;
+  margin-right: 8px;
   fill: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icons {
+    margin-right: 10px;
+  }
 }
 
 .contacts__link:hover .contacts__icons,
@@ -298,25 +324,14 @@ button {
   transform: translateY(0%);
 }
 
-.header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  /* ==============  эффект текущей страницы ============ */
-}
-
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
     border-bottom: 1px solid #ECECEC;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
+.header .navigation .logo {
+  /*отступ от nav*/
 }
 
 @media screen and (min-width: 768px) {
@@ -332,6 +347,13 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header .navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .header .navigation {
     display: flex;
     align-items: center;
@@ -357,6 +379,12 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header .navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header .contacts {
     display: none;
@@ -373,18 +401,6 @@ button {
 
 @media screen and (min-width: 1200px) {
   .header .contacts__item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header .navigation__item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
 }
