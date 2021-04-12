@@ -1,113 +1,113 @@
-.header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+// .header {
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+// }
 
-.navigation {
+// .navigation {
 
-    .logo {
-        @media screen and (min-width: 768px) {
-            margin-right: 88px;
-        }
+//     .logo {
+//         @media screen and (min-width: 768px) {
+//             margin-right: 88px;
+//         }
 
-        @media screen and (min-width: 1200px) {
-            margin-right: 93px;
-        }
-    }
+//         @media screen and (min-width: 1200px) {
+//             margin-right: 93px;
+//         }
+//     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        display: flex;
-        align-items: center;
-    }
-}
-
-
-    
-.navigation__list { 
-    // display: flex;
-    // align-items: center;
-    // margin-left: 93px;
-
-    @media screen and (max-width:767px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        display: flex;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;  
-    }
-    
-}
-
-
-// .header{
-//     border-bottom: 1px solid #ECECEC;
-
-//     & .container {
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
 //         display: flex;
 //         align-items: center;
 //     }
 // }
 
-.contacts {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
 
-
-    @media screen and (max-width:767px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-    }
-}
-
-.contacts__item {
-
-    @media screen and (min-width: 1200px) {
-
-        &:not(:last-child){
-            margin-right: 50px;
-    }
-}
-.navigation__item {
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        &:not(:last-child){
-            margin-right: 50px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        &:not(:last-child){
-            margin-right: 50px;
-    }
-}
-
-
-/* ==============  эффект текущей страницы ============ */
-.current {
-    color: var(--accent-color);
-
-    &::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
     
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color:var(--accent-color);
+// .navigation__list { 
+//     // display: flex;
+//     // align-items: center;
+//     // margin-left: 93px;
+
+//     @media screen and (max-width:767px) {
+//         display: none;
+//     }
+
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
+//         display: flex;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         display: flex;
+//         align-items: center;  
+//     }
     
-        transition: opacity var(--animation);
-    }
-}
+// }
+
+
+// // .header{
+// //     border-bottom: 1px solid #ECECEC;
+
+// //     & .container {
+// //         display: flex;
+// //         align-items: center;
+// //     }
+// // }
+
+// .contacts {
+// //     display: flex;
+// //     align-items: center;
+// //     margin-left: auto;
+
+
+//     @media screen and (max-width:767px) {
+//         display: none;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         display: flex;
+//         align-items: center;
+//         margin-left: auto;
+//     }
+// }
+
+// .contacts__item {
+
+//     @media screen and (min-width: 1200px) {
+
+//         &:not(:last-child){
+//             margin-right: 50px;
+//     }
+// }
+// .navigation__item {
+
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
+//         &:not(:last-child){
+//             margin-right: 50px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         &:not(:last-child){
+//             margin-right: 50px;
+//     }
+// }
+
+
+// /* ==============  эффект текущей страницы ============ */
+// .current {
+//     color: var(--accent-color);
+
+//     &::after{
+//         content: '';
+//         position: absolute;
+//         left: 0;
+//         bottom: 0;
+    
+//         display: block;
+//         width: 100%;
+//         height: 4px;
+//         border-radius: 2px;
+//         background-color:var(--accent-color);
+    
+//         transition: opacity var(--animation);
+//     }
+// }
