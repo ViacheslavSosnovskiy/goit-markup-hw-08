@@ -1,6 +1,6 @@
 .header {
-    // padding-top: 16px;
-    // padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navigation {
@@ -53,12 +53,11 @@
 //     }
 // }
 
-
 .contacts {
 //     display: flex;
 //     align-items: center;
 //     margin-left: auto;
-// }
+
 
     @media screen and (max-width:767px) {
         display: none;
@@ -112,16 +111,3 @@
         transition: opacity var(--animation);
     }
 }
-
-// /*  svg / contact */
-
-// .contacts__icons {
-//     display:inline-flex;
-//     margin-right: 10px;
-//     fill: #757575;
-    
-//     .contacts .contacts__link:hover &,
-//     .contacts .contacts__link:focus & {
-//         fill:var(--accent-color);
-//     }
-// }
