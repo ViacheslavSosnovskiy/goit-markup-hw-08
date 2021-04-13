@@ -31,7 +31,7 @@
                     </li>
                 </ul>
             </nav>
-            <button type="button" class="burger-btn" data-menu-button>
+            <button type="button" class="burger-open-btn" data-menu-button>
                 <svg width="40" height="40">
                     <use href="./images/icons.svg#burger"></use>
                 </svg>
@@ -56,32 +56,38 @@
                 </ul>
         </div>
         <div class="mobile-menu" data-menu>
-            <button class="modal-menu__close-button" data-menu-close>
+            <button class="burger-close-btn" data-menu-close>
                 <svg width="40" height="40">
                     <use href="./images/icons.svg#close-btn"></use>
                 </svg>
             </button>
-            <ul class="mobile-menu__list">
-                <li class="mobile-menu__item">
-                    <a href="./index.html" class="mobile-menu__link">Студия</a>
+            <ul class="mobile-navigation">
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link" href="./index.html">Студия</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="mobile-menu__item">
-                    <a href="#" id="#contacts" class="mobile-menu__link">Контакты</a>
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link" href="#contacts">Контакты</a>
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <a class="" href="mailto:info@devstudio.com">
-                        info@devstudio.com
-                    </a>
+            <div class="mobile-contact">
+                <a class="mobile-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="mobile-contact__link mobile-contact__link--little" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <ul class="mobile-social">
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Instagram</a>
                 </li>
-                <li>
-                    <a class="" href="tel:+380961111111">
-                        +38&nbsp;096&nbsp;111&nbsp;11&nbsp;11
-                    </a>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link .mobile-social__link--margin" href="">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -461,7 +467,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
                 <div class="footer-address">
@@ -525,7 +531,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-button" type="button" data-modal-close>

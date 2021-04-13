@@ -81,27 +81,6 @@ button {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
-  .header .container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header .container {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header .container {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .header .container {
     width: 480px;
@@ -324,75 +303,92 @@ button {
   transform: translateY(0%);
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid #ECECEC;
   }
 }
 
-.header .navigation .logo {
-  /*отступ от nav*/
-}
-
 @media screen and (min-width: 768px) {
-  .header .navigation .logo {
+  .navigation .logo {
     margin-right: 88px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header .navigation .logo {
+  .navigation .logo {
     margin-right: 93px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header .navigation {
+  .navigation {
     display: flex;
     align-items: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header .navigation {
+  .navigation {
     display: flex;
     align-items: center;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .header .navigation__list {
+  .navigation__list {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header .navigation__list {
+  .navigation__list {
     display: flex;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header .navigation__list {
+  .navigation__list {
     display: flex;
     align-items: center;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header .navigation__item:not(:last-child) {
+  .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .header .contacts {
+  .contacts {
     display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header .contacts {
+  .contacts {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -400,16 +396,16 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .contacts__item:not(:last-child) {
+  .contacts__item:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.header .current {
+.current {
   color: var(--accent-color);
 }
 
-.header .current::after {
+.current::after {
   content: '';
   position: absolute;
   left: 0;

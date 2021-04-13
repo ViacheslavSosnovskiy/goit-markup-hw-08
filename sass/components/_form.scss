@@ -98,6 +98,12 @@
     color: var(--title-text-color);
     margin-bottom: 40px;
 
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    }
+
     display: flex;
     align-items: center;
 
