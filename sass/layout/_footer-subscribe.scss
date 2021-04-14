@@ -5,13 +5,27 @@
     }
 
     & b {
+        display: block;
+        text-align: center;
         font-weight: 700;
         font-size: 14px;
-        line-height: 16px;
-        text-transform: uppercase;
+        line-height: 1.14;
         color: var(--primary-white-color);
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     }
 
+}
+
+.subscribe-form {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 /* input */

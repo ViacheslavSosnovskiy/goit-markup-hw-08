@@ -1,10 +1,18 @@
 .footer-social {
-    margin-right: 93px;
+
+   @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+   }
 }
 
 .social-list {
-    display: flex;
-    margin-top: 20px;  /* от присоединяйтесь*/
+   display: flex;
+   margin-bottom: 60px;
+   justify-content: center;
+
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+   }
 }
 
 .social-list__item{
@@ -14,13 +22,20 @@
 }
 
 .join {
+   display: block;
+   text-align: center;
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
    color: var(--primary-white-color);
+   margin-bottom: 20px;
+
+   @media screen and (min-width: 1200px) {
+      text-align: left;
+   }
 }
 
-.white {
+.social-list__icon {
    fill:var(--primary-white-color);
 }
 
