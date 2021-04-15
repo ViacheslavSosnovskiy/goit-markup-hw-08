@@ -1,4 +1,5 @@
 .logo {
+    display: inline-block;
     color:var(--accent-color);
     font-family: Raleway, sans-serif;
 
@@ -15,3 +16,18 @@
     }
 }
 
+.logo-pad {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+}
