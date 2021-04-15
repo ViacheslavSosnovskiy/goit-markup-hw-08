@@ -6,13 +6,13 @@
     <title>WebStudio</title>
     <!-- шрифты -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- нормалайз -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- нормалайз -->     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <!-- sass  нормалайз -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-
-    <link rel="stylesheet" href="./css/portfolio.min.css"/>
+    
+    <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -21,17 +21,22 @@
                 <a class="logo logo-pad" href="./index.html">Web<span class="span-header">Studio</span></a>
                 <ul class="navigation__list list">
                     <li class="navigation__item">
-                        <a class="navigation__link twin" href="./index.html">Студия</a>
+                        <a class="navigation__link twin current" href="#">Студия</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link twin current" href="">Портфолио</a>
+                        <a class="navigation__link twin" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#contacts" class="navigation__link twin" href="">Контакты</a>
+                        <a class="navigation__link twin" href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="contacts list">
+            <button type="button" class="burger-open-btn" data-menu-button>
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#burger"></use>
+                </svg>
+            </button>
+                <ul class="contacts list">
                     <li class="contacts__item item">
                         <a class="contacts__link info twin" href="mailto:info@devstudio.com">
                             <svg class="contacts__icons" width="16" height="12">
@@ -50,12 +55,48 @@
                     </li>
                 </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <button class="burger-close-btn" data-menu-close>
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#close-btn"></use>
+                </svg>
+            </button>
+            <ul class="mobile-navigation">
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-navigation__item">
+                    <a class="mobile-navigation__link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+            <div class="mobile-contact">
+                <a class="mobile-contact__link" href="tel:+380961111111">+38&nbsp;096&nbsp;111&nbsp;11&nbsp;11</a>
+                <a class="mobile-contact__link mobile-contact__link--little" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <ul class="mobile-social">
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link" href="">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="mobile-social__link .mobile-social__link--margin" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="section-buttons section">
             <div class="container">
                 <h1 class="visually-hidden">Портфолио</h1>
-                    <ul class="buttons-list list">
+                    <ul class="buttons-list">
                         <li class="buttons-list__item">
                             <button class="buttons-list__button" type="button">Все</button>
                         </li>  
@@ -68,7 +109,7 @@
                         <li class="buttons-list__item">
                             <button class="buttons-list__button" type="button">Дизайн</button>
                         </li>
-                        <li class="buttons-list__item">
+                        <li class="buttons-list__item buttons-list__item--margin">
                             <button class="buttons-list__button" type="button">Маркетинг</button>
                         </li>
                     </ul>
@@ -77,7 +118,7 @@
         <section class="section-works section">
             <div class="container">
                 <h2 class="visually-hidden">Наши работы</h2>
-                    <ul class="card-list list">
+                    <ul class="card-list">
                         <li class="card-list__item">
                             <a class="card-list__link" href="">
                                 <div class="works-wrapper">
@@ -453,5 +494,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>   
 </body>
 </html>
