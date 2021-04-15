@@ -47,6 +47,7 @@ ul, ol {
 
 img {
   display: block;
+  width: 100%;
 }
 
 a {
@@ -219,6 +220,7 @@ button {
   fill: #AFB1B8;
   width: 20px;
   height: 20px;
+  transition: fill var(--animation);
 }
 
 .icon-list__link:hover .svg-icons,
@@ -586,13 +588,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .subscribe-input {
-    max-width: 450px;
+    min-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe-input {
-    width: 358px;
+    max-width: 358px;
     margin-bottom: 0;
   }
 }

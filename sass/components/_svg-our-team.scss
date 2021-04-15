@@ -24,6 +24,7 @@
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
+    transition: fill var(--animation);
 
     .icon-list__link:hover &,
     .icon-list__link:focus & {

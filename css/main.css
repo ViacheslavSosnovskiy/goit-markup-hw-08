@@ -47,6 +47,7 @@ ul, ol {
 
 img {
   display: block;
+  width: 100%;
 }
 
 a {
@@ -219,6 +220,7 @@ button {
   fill: #AFB1B8;
   width: 20px;
   height: 20px;
+  transition: fill var(--animation);
 }
 
 .icon-list__link:hover .svg-icons,
@@ -805,9 +807,9 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .advantages-list__item {
-    flex-basis: calc(100% / 4 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
   }
@@ -828,20 +830,6 @@ button {
   height: 120px;
   background: #F5F4FA;
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .advantages-list__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100vw;
-    height: 100vh;
-    max-width: 450px;
-    height: 120px;
-  }
 }
 
 .section-about {
@@ -905,54 +893,46 @@ button {
 
 .section-team {
   background-color: #F5F4FA;
-}
-
-@media screen and (min-width: 768px) {
-  .section-team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-team h2 {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.team-list h3 {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-}
-
-.team-list p {
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.18;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+.team-list__item {
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow var(--animation);
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100% / 2 - 30px));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team-list {
-    display: flex;
+  .team-list__item {
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
@@ -962,31 +942,30 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .team-list__item {
-    flex-basis: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
+.team-list__item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (min-width: 1200px) {
-  .team-list__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.card {
-  background: var(--primary-white-color);
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: var(--card-shadow);
+.team-list__wrapper {
+  border-bottom: 1px solid #EEEEEE;
   border-radius: 4px;
-  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
-.our-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.team-list__title {
   text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+
+.team-list__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 16px;
 }
 
 .section-clients {
@@ -1227,13 +1206,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .subscribe-input {
-    max-width: 450px;
+    min-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe-input {
-    width: 358px;
+    max-width: 358px;
     margin-bottom: 0;
   }
 }
