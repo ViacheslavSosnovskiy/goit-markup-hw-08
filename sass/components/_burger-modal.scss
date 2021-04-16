@@ -19,6 +19,7 @@
 }
 
 .mobile-menu {
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 50%;
@@ -44,6 +45,10 @@
 }
 
 .mobile-navigation__link {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
@@ -54,9 +59,6 @@
         color: var(--accent-color);
     }
 
-    &:not(:last-child) {
-        margin-bottom: 32px;
-    }
 }
 
 .mobile-navigation {

@@ -1,10 +1,12 @@
 .section-buttons {
     padding-top: 60px;
-    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 66px;
+    }
 
     @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 94px;   
     }
 }
 
@@ -12,13 +14,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 40px;
     margin-top: -8px;
 
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
-        margin-bottom: 50px;
     }
 }
 

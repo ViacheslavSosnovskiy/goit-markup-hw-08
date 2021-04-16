@@ -17,10 +17,11 @@
     }
 }
 
-// .footer-address {
-//     margin-right: 70px;
-// }
-
+.footer-address {
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
+}
 .logo-footer {
     display: block;
     text-align: center;
