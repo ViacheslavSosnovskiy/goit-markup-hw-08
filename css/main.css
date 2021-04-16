@@ -75,7 +75,6 @@ button {
   padding-right: 15px;
   min-width: 320px;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
 
 .header .container {
@@ -438,6 +437,9 @@ button {
 
 .burger-open-btn,
 .burger-close-btn {
+  display: block;
+  font: inherit;
+  color: inherit;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -480,16 +482,16 @@ button {
   transform: translateY(0) translateX(-50%);
 }
 
+.mobile-navigation__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .mobile-navigation__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-}
-
-.mobile-navigation__link:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 .mobile-navigation__link:hover {
@@ -548,10 +550,6 @@ button {
   margin-right: 0;
 }
 
-.mobile-social__item:not(:last-child) {
-  margin-right: 20px;
-}
-
 .mobile-social__item {
   display: flex;
   align-items: center;
@@ -567,6 +565,10 @@ button {
   width: 1px;
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .header {
