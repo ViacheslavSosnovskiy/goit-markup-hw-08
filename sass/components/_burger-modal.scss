@@ -6,6 +6,12 @@
     background-color: transparent;
     border: none;
     padding: 0;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        transition: fill var(--animation);
+    }
 }
 
 .burger-open-btn {

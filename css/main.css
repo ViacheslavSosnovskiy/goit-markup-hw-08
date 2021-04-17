@@ -445,6 +445,13 @@ button {
   padding: 0;
 }
 
+.burger-open-btn:hover, .burger-open-btn:focus,
+.burger-close-btn:hover,
+.burger-close-btn:focus {
+  fill: var(--accent-color);
+  transition: fill var(--animation);
+}
+
 @media screen and (min-width: 768px) {
   .burger-open-btn {
     display: none;
